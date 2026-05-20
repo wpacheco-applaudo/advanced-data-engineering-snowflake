@@ -57,7 +57,7 @@ raw zone table build
 -- country table build
 
 -- todo: complete table build
-CREATE TABLE {{env}}_tasty_bytes.raw_pos.country
+CREATE OR ALTER TABLE {{env}}_tasty_bytes.raw_pos.country
 (
    country_id NUMBER(18,0),
    country VARCHAR(16777216),
@@ -294,7 +294,11 @@ USE WAREHOUSE demo_build_wh;
 
 
 -- country table load
+<<<<<<< HEAD
 COPY INTO {{env}}_tasty_bytes.raw_pos.country
+=======
+ COPY INTO {{env}}_tasty_bytes.raw_pos.country
+>>>>>>> 89b71cd (Fix missing alter)
  (
     country_id,
     country,
