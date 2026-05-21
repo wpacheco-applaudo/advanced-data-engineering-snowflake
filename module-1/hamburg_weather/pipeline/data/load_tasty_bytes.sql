@@ -294,11 +294,7 @@ USE WAREHOUSE demo_build_wh;
 
 
 -- country table load
-<<<<<<< HEAD
-COPY INTO {{env}}_tasty_bytes.raw_pos.country
-=======
  COPY INTO {{env}}_tasty_bytes.raw_pos.country
->>>>>>> 89b71cd (Fix missing alter)
  (
     country_id,
     country,
